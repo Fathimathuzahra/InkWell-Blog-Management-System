@@ -214,11 +214,4 @@ Creating, editing, and deleting posts requires authentication. Users must have p
 
 Users must be authenticated to create comments. Editing and deleting comments are restricted by the configured ownership permissions.
 
-## 🔐 Authentication and Authorization
 
-InkWell uses JWT authentication through Django REST Framework Simple JWT.
-
-When a user logs in successfully, the authentication API returns tokens. The frontend sends the access token in the request header:
-
-```text
-Authorization: Bearer <access_token>
